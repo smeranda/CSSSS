@@ -76,7 +76,7 @@ if ($_GET['presentation'] != 'summary'){
         die('Rats, nothing here');
     }
 ?>
-    <h2>Today's Summary</h2>
+    <h2>Today's Backchannel Summary</h2>
     <section class="col highlight">
         <h3>Questions <span><?php echo(mysql_num_rows($tweets)); ?></span></h3>
         <ul>
