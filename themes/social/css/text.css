@@ -1,0 +1,10 @@
+@font-face{font-family:'Changa One';font-style:normal;font-weight:normal;src:url('fonts/ChangaOne-Regular.ttf') format('truetype'), url('fonts/ChangaOne-Regular.woff') format('woff');}body{font:1em/1.4em Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;color:#4c4c4c;}
+h1,h2,h3,h4,h5,h6{line-height:1em;font-weight:bold;}
+h1{font-size:2em;}
+h2{font-size:1.8em;}
+h3{font-size:1.6em;}
+h4{font-size:1.4em;}
+h5{font-size:1.2em;}
+h6{font-size:0.8em;}
+p,h1,h2,h3,h4,h5,h6,ul{margin-bottom:1em;}
+.impact{font-family:"Changa One",Palatino,"Palatino Linotype",Palladio,"URW Palladio L","Book Antiqua","Liberation Serif",Times,serif;font-weight:normal;}

@@ -5,28 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>CSSS: A brief introduction</title>
 	
-	<link href="visuals/css/slideshow.css" rel="stylesheet" />
+	<link href="../../visuals/css/slideshow.css" rel="stylesheet" />
+	<!-- c:backchannel For use with a backchannel -->
+	<link href="../../visuals/css/backchannel.css" rel="stylesheet" />
 	<!-- c:theme Swap out for theme CSS here -->
-	<link href="themes/LeaVerou/css/theme.css" rel="stylesheet" />
-	<link href="themes/LeaVerou/css/talk.css" rel="stylesheet" />
+	<link href="../../themes/social/css/theme.css" rel="stylesheet" />
+	<link href="css/talk.css" rel="stylesheet" />
 </head>
-<body data-duration="10"> <!-- Place duration of entire presentation (for use as timer) in minutes -->
+<body data-duration="45"> <!-- Place duration of entire presentation (for use as timer) in minutes -->
 
 <header id="intro" class="slide">
-	<h1>
-		<object data="themes/LeaVerou/logo.svg" width="100%" type="image/svg+xml">
-			<img src="themes/LeaVerou/logo.png" alt="CSSS: CSS-based SlideShow System" />
-		</object>
-	</h1>
-	<p class="attribution">By Lea Verou</p>
+	<h1>Social Media ROI</h1>
+	<p class="attribution">
+	    By Seth Meranda <br />
+	    User Experience Architect - University of Nebraska&ndash;Lincoln<br />
+	    Associate Consultant - Noel-Levitz
+	</p>
 </header>
 <section>
 	<header class="slide">
 		<h1>Introduction</h1>
 	</header>
 	
-	<section class="slide" title="CSSS: Introduction">
-		<h2>What is it?</h2>
+	<section class="slide" title="Backchannel" id="bc_description">
+		<h2>Today's Backchannel</h2>
 		<p>A simple framework for building presentations with modern web standards</p>
 		<ul>
 			<li class="delayed">An HTML file contains the whole presentation</li>
@@ -35,7 +37,7 @@
 		</ul>
 	</section>
 	
-	<section class="slide">
+	<section class="slide" id="bc_summary">
 		<h2>History</h2>
 		<ul>
 			<li class="delayed">I had to create a presentation for my talk at <a href="http://front-trends.com">Front Trends 2010</a></li>
@@ -197,21 +199,22 @@
 		<li>A big thanks to the community at Github for various contributions to this project</li>
 	</ul>
 </footer>
+<div id="backchannel">
+    <div class="wrapper">
+        <ul>
+            <li id="hash_questions">#soc11q</li>
+            <li id="hash_conversation">#soc11</li>
+        </ul>
+        <ol id="tweets"></ol>
+    </div>
+</div>
 
-<script src="js/slideshow.js"></script>
-<script src="plugins/css-edit.js"></script>
-<script src="plugins/css-snippets.js"></script>
-<script src="plugins/css-controls.js"></script>
+<script src="../../js/jquery.1.6.4.js"></script>
+<script src="../../js/slideshow.js"></script>
+<script src="../../js/twitter.search.js"></script>
 <script>
-var slideshow = new SlideShow();
-
-new CSSSnippet(document.getElementById('snippet'));
-
-var cssControls = document.querySelectorAll('.css-control');
-for(var i=0; i<cssControls.length; i++) {
-	new CSSControl(cssControls[i]);
-}
+    var slideshow = new SlideShow();
+    var twitter = new Backchannel();
 </script>
-	
 </body>
 </html>

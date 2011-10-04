@@ -1,0 +1,16 @@
+@font-face{font-family:'Changa One';font-style:normal;font-weight:normal;src:url('fonts/ChangaOne-Regular.ttf') format('truetype'), url('fonts/ChangaOne-Regular.woff') format('woff');}body{font:1em/1.4em Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;color:#4c4c4c;}
+h1,h2,h3,h4,h5,h6{line-height:1em;font-weight:bold;}
+h1{font-size:2em;}
+h2{font-size:1.8em;}
+h3{font-size:1.6em;}
+h4{font-size:1.4em;}
+h5{font-size:1.2em;}
+h6{font-size:0.8em;}
+p,h1,h2,h3,h4,h5,h6,ul{margin-bottom:1em;}
+.impact{font-family:"Changa One",Palatino,"Palatino Linotype",Palladio,"URW Palladio L","Book Antiqua","Liberation Serif",Times,serif;font-weight:normal;}
+*{margin:0;padding:0;}
+#timer:before{content:'\2742';}
+html{background:#4099ff url('images/cloudBackground.png') bottom center;background-size:cover;}
+.slide{padding:0 2.5% 2%;background:rgba(0, 0, 0, 0.5);background-clip:padding-box;-moz-background-clip:padding-box;text-shadow:0.05em 0.05em 0.1em rgba(0, 0, 0, 0.4);color:white;border:30px solid transparent;}.slide>h1,.slide>h2{font-family:"Changa One",Palatino,"Palatino Linotype",Palladio,"URW Palladio L","Book Antiqua","Liberation Serif",Times,serif;}
+.slide ul,.slide ol{margin-left:2%;}
+header.slide>h1{border-bottom:0.05em solid white;position:relative;margin:5% auto;font-size:4em;-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);-o-transform:rotate(-5deg);-ms-transform:rotate(-5deg);transform:rotate(-5deg);}header.slide>h1:after{position:absolute;bottom:-0.15em;background:rgba(0, 0, 0, 0.3);background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));background:-moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));background:-o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));background:-ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));filter:formatstring(progid:DXImageTransform.Microsoft.gradient(startColorstr='{0}', endColorstr='{1}'), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));-ms-filter:formatstring({2}progid:DXImageTransform.Microsoft.gradient(startColorStr='{0}', EndColorStr='{1}'){2}, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), '"');background:linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));height:0.1em;content:'';width:100%;left:0;}

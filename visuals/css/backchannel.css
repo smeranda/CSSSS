@@ -1,0 +1,149 @@
+#backchannel {
+    position: absolute;
+    height: 0;
+    bottom: 0%;
+    left:0%;
+    z-index: 101;
+    max-height: 0px;
+    overflow: hidden;
+    width: 100%;
+    line-height: 100%;
+    font-size: 25px;
+    text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.4);
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in;
+}
+#backchannel.display {
+    height: 100px;
+    max-height: 100px;
+}
+#backchannel .wrapper{
+    position: relative;
+    margin: 0 0 0 30px;
+    display: inline-block;
+    width: 100%;
+}
+#backchannel ul {
+    float: left;
+    text-align: center;
+    background: rgba(15,31,50, 0.9);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    letter-spacing: -2px;
+    position: relative;
+    z-index: 2;
+}
+#backchannel ul:before{
+    content: '';
+    bottom: 45%;
+    right: 90%;
+    background-image: url('images/twitter_newbird_white.png');
+    width: 42px;
+    height: 30px;
+    display: block;
+    position: absolute;
+}
+#backchannel ul li {
+    display: block;
+    text-align: left;
+    background: url('images/backchannel_options.png') no-repeat 0 14px;
+    padding: 10px 0 10px 30px;
+}
+#backchannel ul li:first-child {
+    color: #FCE941;
+}
+#backchannel ul li:last-child {
+    border-top: 3px dashed rgba(255,255,255,0.2);
+}
+#backchannel ul #hash_questions {
+    background-position: 0 -64px;
+}
+#bc_summary .col {
+    width: 45%;
+    float: right;
+    margin-left:3%;
+    font-size: 16px;
+    line-height: 100%;
+    height: 70%;
+}
+#bc_summary .col ul {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#bc_summary .col.highlight {
+    margin-left: 0;
+    float: left;
+}
+#tweets {
+    font-size: 16px;
+    line-height: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#bc_summary .col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#tweets li {
+    display: block;
+    position: absolute;
+    width: 650px;
+    margin-right: 1%;
+    left: 99%;
+    top: 0;
+    -webkit-transition-property: left;
+    -webkit-transition-duration: 40s;
+    -webkit-transition-timing-function: cubic-bezier(0.07,0.52,0.78,0.72);
+}
+#tweets li.displayed {
+    left: -50%;
+}
+#bc_summary .col li {
+    width: 100%;
+    margin: 1% 0;
+    background: #fff;
+    border-radius: 1em;
+    color: #4c4c4c;
+}
+#tweets blockquote, #bc_summary blockquote {
+    background: #fff;
+    padding: 1em;
+    border-radius: 1em;
+    display: inline-block;
+}
+#tweets blockquote.highlight, #bc_summary .highlight li {
+    background: #FCE941;
+}
+#bc_summary .highlight blockquote {
+    background: none;
+}
+#tweets blockquote img, #bc_summary blockquote img {
+    max-width: 45px;
+    max-height: 45px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 1em;
+}
+#tweets blockquote cite, #bc_summary blockquote cite {
+    display: block;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+#tweets blockquote cite a, #bc_summary blockquote cite a {
+    color: #333;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.2em;
+}

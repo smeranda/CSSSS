@@ -1,0 +1,54 @@
+@import 'text.less';
+@import 'less-css3.less';
+/*
+
+body > header (opening slide)
+
+body > footer (closing slide)
+
+.slide (a new slide, regadless of DOM placement.)
+
+*/	
+* {
+    margin: 0;
+    padding: 0;
+}
+#timer:before {content: '\2742';}
+html {
+	background: #4099FF url('images/cloudBackground.png') bottom center;
+	background-size: cover;
+}
+.slide {
+	padding:0 2.5% 2%;
+	background: rgba(0,0,0,.5);
+	background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	text-shadow:.05em .05em .1em rgba(0,0,0,.4);
+	color: white;
+	border:30px solid transparent;
+	
+	> h1, > h2 {
+	    font-family:@impactFont;
+	}
+	
+	ul, ol {
+	    margin-left: 2%;
+	}
+}
+header.slide > h1 {
+    border-bottom: 0.05em solid white;
+    position: relative;
+    margin: 5% auto;
+    font-size: 4em;
+    .rotate(-5deg);
+    
+    &:after {
+        position: absolute;
+        bottom: -0.15em;
+        .linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0));
+        height: 0.1em;
+        content: '';
+        width: 100%;
+        left: 0;
+    }
+}

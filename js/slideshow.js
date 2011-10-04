@@ -18,7 +18,8 @@ if(!('classList' in body)) {
 var documentTitle = document.title + '';
 
 var self = window.SlideShow = function(container, slide) {
-	var me = this;
+
+    var me = this;
 	
 	// Set instance
 	if(!window.slideshow) {
@@ -341,6 +342,9 @@ self.prototype = {
 			if(window.opener && opener.slideshow && opener.slideshow.slide != this.slide) {
 				opener.slideshow.goto(this.slide);
 			}
+			
+			// Added to let Backchannel plugin know
+			Backchannel.notify(slide);
 		}
 		
 		// If you attach the listener immediately again then it will catch the event
@@ -392,6 +396,17 @@ self.prototype = {
 			
 			slide.setAttribute('style', previousStyle);
 		}
+	},
+	
+	// Is the element on the current slide?
+	onCurrent: function(element) {
+		var slide = self.getSlide(element);
+
+		if(slide) {
+			return '#' + slide.id === location.hash;
+		}
+
+		return false;
 	}
 };
 
