@@ -2,8 +2,8 @@
 
 include_once('config.php');
 // Plug in the twitter search term here
-$search_term = '#ios';
-$highlight_term = '#apple';
+$search_term = '#soc11';
+$highlight_term = '#soc11q';
 
 // For use with a database
 

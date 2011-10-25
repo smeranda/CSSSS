@@ -1,0 +1,70 @@
+.slide.img {
+    background-size: cover;
+}
+#sm_frame {
+    background-image: url('../images/pipes.jpg');
+}
+#sm_history {
+    background-image: url('../images/shout.jpg');
+}
+#sm_analysis {
+    background-image: url('../images/e_i.jpg');
+}
+#sm_struggles {
+    background-image: url('../images/struggle.jpg');
+}
+#sm_reset {
+    background-image: url('../images/track.jpg');
+}
+
+.slide figure {
+    text-align: center;
+}
+.slide img, .slide video {
+    max-width: 100%;
+    -webkit-box-reflect: below 1% -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0.2) 100%);
+    border: 5px solid rgba(0,0,0,0.3);
+    height: auto;
+}
+.slide video {
+    width: 75%;
+    height:auto;
+}
+.slide ol {
+    margin-left: 0;
+}
+.slide ol li {
+    list-style-position:inside;
+    padding: 1em;
+    border-radius: 1em;
+    background: #b70302;
+}
+.slide ol.duo {
+    margin-left: 0;
+}
+.slide ol.duo li {
+    list-style-type: none;
+    padding: 5%;
+    border-radius: 1em;
+    background: #b70302;
+    max-width: 40%;
+    display: inline;
+}
+.slide blockquote.quote {
+    font-size: 200%;
+    line-height: 1;
+    font-weight: bold;
+    quotes: "\201C" "\201D";
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+.slide blockquote.quote:before, blockquote.quote:after{
+    content: open-quote;
+    font-size:200%;
+    font-family: serif;
+    margin-top: 0.5em;
+}
+.slide blockquote.quote:after{
+    content: close-quote;
+}

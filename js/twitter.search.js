@@ -14,13 +14,16 @@
     // Assign values
     bc.path = 'twitter.php';
     bc.interval = 30000;
+    bc.running = false;
     
     start = function() {
         $('#backchannel').addClass('display');
-        setTimeout( // Give presenter time to introduce backchannel
-            "get()",
-            bc.interval
-        );
+        
+        if(bc.running){ //check to make sure we haven't already started the backchannel
+            return;
+        } else {
+            bc.running = true;
+        }
         bc_ = setInterval(
             "get()", 
             bc.interval
